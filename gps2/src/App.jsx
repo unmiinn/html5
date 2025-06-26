@@ -1,9 +1,9 @@
 import { useState } from 'react'
 
 function App() {
-  const [lat, set_lat] = useState()
-  const [lon, set_lon] = useState()
-  const [accuracy, set_accuracy] = useState()
+  const [lat, set_lat] = useState(0)
+  const [lon, set_lon] = useState(0)
+  const [accuracy, set_accuracy] = useState(0)
 
   navigator.geolocation.getCurrentPosition((position) => {
     const lat0 = position.coords.latitude;
@@ -18,9 +18,9 @@ function App() {
     return (
       <>
         <div>
-<h2>위도:{lat}</h2>
-<h2>경도:{lon}</h2>
-<h2>정확도:{accuracy}미터</h2>
+<h2 className='zxc'>위도:{lat}</h2>
+<h2 className='asd'>경도:{lon}</h2>
+<h2 className='qwe'>정확도:{accuracy}미터</h2>
         </div>
       </>
     )
