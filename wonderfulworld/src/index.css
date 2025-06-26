@@ -72,5 +72,13 @@ button:focus-visible {
   flex-direction: column;
   gap:15px;
   align-items: center;
-  width:100vW;
+  width:80vW;
+}
+h2{color:greenyellow}
+h3{color: darkgreen;}
+h4{color: forestgreen;}
+.you{color: blue; border: 1px solid; border-color: red;}
+
+.mun{
+  color: aquamarine;
 }
